@@ -27,11 +27,11 @@ pip install -r requirements.txt
 ```
 
 
-### Create a `.env` file in the root directory and add your Pinecone & openai credentials as follows:
+### Create a `.env` file in the root directory and add your Pinecone & Groq credentials as follows:
 
 ```ini
 PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+GROQ_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 
@@ -42,23 +42,21 @@ python store_index.py
 
 ```bash
 # Finally run the following command
-python app.py
+streamlit run app.py
 ```
 
-Now,
-```bash
-open up localhost:
+
 ```
 
 
 ### Techstack Used:
 
-- Python
-- LangChain
-- Flask
-- GPT
-- Pinecone
-
+Frontend					Streamlit
+LLM 						Groq LLaMA3 (8B)
+Vector Store				Pinecone
+Embeddings					HuggingFace all-MiniLM-L6-v2
+RAG Framework				LangChain
+PDF LoaderLangChain 		Community + PyPDF
 
 # AWS-CICD-Deployment-with-Github-Actions
 
