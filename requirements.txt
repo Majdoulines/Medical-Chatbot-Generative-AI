@@ -1,11 +1,12 @@
-sentence-transformers==2.2.2
-langchain 
-flask
-pypdf
-python-dotenv
-pinecone[grpc]
+streamlit
+langchain
+langchain-core
+langchain-community
+langchain-groq
 langchain-pinecone
-langchain_community
-langchain_openai
-langchain_experimental
+langchain-huggingface
+pinecone[grpc]
+sentence-transformers
+python-dotenv
+pypdf
 -e .
